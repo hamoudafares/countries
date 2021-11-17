@@ -1,6 +1,12 @@
+
+
 # Frontend
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
+
+to run the Frontend you need to have a mapbox Token
+you can have it easily from their platform and replace it in environment.ts (angular project) 
+
 
 ## Development server
 
