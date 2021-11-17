@@ -1,0 +1,21 @@
+<!--Using ng-option and for loop-->
+
+<div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
+<div >
+    
+    <ng-select [multiple]="true" (remove)="removeSource($event.label)"[(ngModel)]="selectedCountries">
+        <ng-option *ngFor="let country of countriesList" [value]="country['name']">{{country['name']}}</ng-option>
+    </ng-select>
+
+     <div class="buttons-container">
+        <button class="button" (click)="plotCountries()">Search</button>
+        <button class="button" (click)="plotAllGeometries()">All Countries</button>
+     </div>
+
+</div>
+<div class="map-container">
+
+    <div class="map match-parent" id="map"></div>
+</div>
